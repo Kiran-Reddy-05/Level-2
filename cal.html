@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="ocal.css">
+</head>
+<body>
+  <div id="calculator">
+    <div id="input-result-container">
+      <div id="input-container">
+        <input type="text" id="display" disabled>
+      </div>
+      <div id="result-container">
+        <div id="result-display"></div>
+      </div>
+    </div>
+    <tr>
+      <tr>
+        <td><input type="button" value="C" onclick="clearDisplay()"></td>
+        <td><input type="button" value="%" onclick="calculatePercentage()"></td>
+        <td><input type="button" value="⌫" onclick="deleteLastCharacter()"></td>
+        <td><input type="button" value="/" onclick="appendToDisplay('/')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="√" onclick="calculateSquareRoot()"></td>
+        <td><input type="button" value="1/x" onclick="calculateReciprocal()"></td>
+        <td><input type="button" value="x^2" onclick="calculateSquare()"></td>
+        <td><input type="button" value="x^3" onclick="calculateCube()"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" onclick="appendToDisplay('7')"></td>
+        <td><input type="button" value="8" onclick="appendToDisplay('8')"></td>
+        <td><input type="button" value="9" onclick="appendToDisplay('9')"></td>
+        <td><input type="button" value="*" onclick="appendToDisplay('*')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="appendToDisplay('4')"></td>
+        <td><input type="button" value="5" onclick="appendToDisplay('5')"></td>
+        <td><input type="button" value="6" onclick="appendToDisplay('6')"></td>
+        <td><input type="button" value="-" onclick="appendToDisplay('-')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1" onclick="appendToDisplay('1')"></td>
+        <td><input type="button" value="2" onclick="appendToDisplay('2')"></td>
+        <td><input type="button" value="3" onclick="appendToDisplay('3')"></td>
+        <td><input type="button" value="+" onclick="appendToDisplay('+')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="0" onclick="appendToDisplay('0')"></td>
+        <td><input type="button" value="00" onclick="appendToDisplay('00')"></td>
+        <td><input type="button" value="." onclick="appendToDisplay('.')"></td>
+        <td><input type="button" value="=" onclick="calculate()"></td>
+        
+      </tr>
+    </table>
+  </div>
+  <script src="ocal.js"></script>
+</body>
+</html>
