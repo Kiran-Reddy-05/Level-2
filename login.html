@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and Register</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form" id="login-form">
+            <h2>Login</h2>
+            <form onsubmit="return login()">
+                <input type="text" placeholder="👤Username" id="username" required><br>
+                <input type="password" placeholder="🔑password" id="password" required><br>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" onclick="showRegisterForm()">Register</a></p>
+        </div>
+
+        <div class="form" id="register-form" style="display: none;">
+            <h2>Register</h2>
+            <form onsubmit="return register()">
+                <input type="text" placeholder="👤Username" id="new-username" required><br>
+                <input type="password" placeholder="🔑New-password" id="new-password" required><br>
+                <input type="password" placeholder="🔑confirm-password" required><br>
+                <button type="submit">Register</button>
+                <button type="button" onclick="goBack()">Back</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
